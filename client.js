@@ -9,7 +9,7 @@ let newClient = net.connect(8080, 'localhost', () => {
 	});
 
 	newClient.on('data', data => {
-		process.stout.write(data);
+		process.stdout.write(data);
 	});
 
 });
